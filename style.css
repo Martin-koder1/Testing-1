@@ -1,3 +1,102 @@
 body {
   margin: 0;
+  animation: color-change 30s infinite;
+}
+
+@keyframes color-change {
+  0% {background-color: red;}
+  10% {background-color: orange;}
+  25% {background-color: yellow;}
+  40% {background-color: green;}
+  55% {background-color: blue;}
+  70% {background-color: indigo;}
+  85% {background-color: violet;}
+  93% {background-color: pink;}
+  100% {background-color: red;}
+}
+
+.box b {
+  display: block;
+  width: 262px;
+  height: 115px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/DVD_logo.svg/2560px-DVD_logo.svg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: color-change 30s infinite;
+  position: absolute;
+  -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 6.4s linear 0s infinite alternate;
+  -moz-animation: moveX 5s linear 0s infinite alternate, moveY 6.4s linear 0s infinite alternate;
+  -o-animation: moveX 5s linear 0s infinite alternate, moveY 6.4s linear 0s infinite alternate;
+  animation: moveX 5s linear 0s infinite alternate, moveY 6.4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 1270px; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 1270px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 1270px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 1270px; }
+}
+
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 580px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 580px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 580px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 580px; }
+}
+
+
+
+.box2 p {
+  display: block;
+  width: 262px;
+  height: 115px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/DVD_logo.svg/2560px-DVD_logo.svg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: color-change 30s infinite;
+  position: absolute;
+  -webkit-animation: moveX2 4s linear 0s infinite alternate, moveY2 5.4s linear 0s infinite alternate;
+  -moz-animation: moveX2 4s linear 0s infinite alternate, moveY2 5.4s linear 0s infinite alternate;
+  -o-animation: moveX2 4s linear 0s infinite alternate, moveY2 5.4s linear 0s infinite alternate;
+  animation: moveX2 4s linear 0s infinite alternate, moveY2 5.s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX2 {
+  from { right: 0; } to { right: 1270px; }
+}
+@-moz-keyframes moveX2 {
+  from { right: 0; } to { right: 1270px; }
+}
+@-o-keyframes moveX2 {
+  from { right: 0; } to { right: 1270px; }
+}
+@keyframes moveX2 {
+  from { right: 0; } to { right: 1270px; }
+}
+
+@-webkit-keyframes moveY2 {
+  from { bottom: 0; } to { bottom: 570px; }
+}
+@-moz-keyframes moveY2 {
+  from { bottom: 0; } to { bottom: 570px; }
+}
+@-o-keyframes moveY2 {
+  from { bottom: 0; } to { bottom: 570px; }
+}
+@keyframes moveY2 {
+  from { bottom: 0; } to { bottom: 570px; }
 }
